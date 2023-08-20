@@ -1,0 +1,12 @@
+// The code below logs the name of the first named range.
+var namedRanges = SpreadsheetApp.getActiveSpreadsheet().getNamedRanges();
+for (var i = 0; i < namedRanges.length; i++) {
+  Logger.log(namedRanges[i].getName());
+}
+// The code below logs the number of sheets in the active spreadsheet.
+Logger.log(SpreadsheetApp.getActiveSpreadsheet().getNumSheets());
+function nomeAba() {
+var ss = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = ss.getSheets()[0];
+return sheet.getName();
+}
